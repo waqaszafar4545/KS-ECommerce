@@ -1,0 +1,39 @@
+
+# Laravel pipelines https://confluence.atlassian.com/bitbucket/laravel-with-bitbucket-pipelines-913473967.html
+#
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+#image: php:7.1.1
+
+
+# Bitbucket Pipelines now includes the option to allocate additional resources.
+# By specifying the size of '2x', your pipeline will include double the resources (eg. 4GB memory → 8GB memory).
+#options:
+#  size: 2x
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - composer
+        script:
+          #- apt-get update && apt-get install -y unzip
+          #- apt-get install -y openssh-client
+          - ssh root@165.22.114.178 'bash -s' < execute.sh
+          #- curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+          #- composer install
+          #- cp .env.example .env
+          #- php artisan key:generate
+          #- vendor/bin/phpunit
+          #- echo "Done!"
+# definitions:
+#   services:
+#     mysql:
+#       image: mysql
+#       environment:
+#         MYSQL_DATABASE: 'test'
+#         MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+#         MYSQL_USER: 'test'
+#         MYSQL_PASSWORD: 'secret'
+#     redis:
+#       image: redis

@@ -1,0 +1,136 @@
+ .main-sidebar .sidebar {
+     width: 100%;
+     /*overflow-y: scroll !important;*/
+ }
+ 
+ .list-groupzee {
+     margin-top: 80px;
+ }
+ /* Exhibition page start*/
+ 
+ .btnsave {
+     background-color: #76a7cf;
+     border: 1px solid #009432;
+     display: inline-block;
+     padding: 10px 15px;
+     color: #ffffff;
+     transition: .4s;
+     border-radius: 30px;
+ }
+ 
+ .zh3 {
+     font: Bold 24px/29px Helvetica Neue;
+ }
+ 
+ .zlabel {
+     font-size: 14px;
+ }
+ 
+ .zrow {
+     padding: 1px 10px 10px 20px;
+ }
+ 
+ .zbtn {
+     background-color: #f4f6f9;
+ }
+ 
+ .zcontroll {
+     margin-top: 10px;
+ }
+ 
+ .zcontent {
+     padding: 21px;
+     background-color: #DFE4EB;
+ }
+ 
+ .control_section {
+     margin-top: 40px;
+ }
+ /* showguid page  start*/
+ 
+ .edit {
+     background: #FF656F;
+     border-radius: 50%;
+     padding: 3px 10px;
+     cursor: pointer;
+     color: white !important;
+     font-size: 14px;
+     font-weight: 600;
+ }
+ 
+ .input-group-text {
+     background-color: white;
+     border: none;
+ }
+ 
+ .custom-file-input:lang(en)~.custom-file-label::after {
+     content: "Choose file";
+ }
+ 
+ .custom-file-label::after {
+     background-color: #76a7cf;
+     border-radius: 0px;
+     color: white;
+ }
+ 
+ .Exhibitions {
+     width: 100%;
+ }
+ /* seminorlist start */
+ 
+ .Seminar {
+     border: 1px solid gray;
+     padding: 16px 31px;
+     box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2);
+ }
+ /* software start */
+ 
+ .ios {
+     position: absolute;
+     bottom: 0;
+     top: 64px;
+     left: 0;
+     right: 0;
+     color: white;
+     font-size: 19px;
+     text-transform: uppercase;
+ }
+ 
+ .main-header span {
+     margin-left: auto;
+     margin-right: 0px !important;
+ }
+ 
+ ul.navbar-nav.ml-auto {
+     margin-right: 291px;
+ }
+ 
+ .dropdown a img {
+     width: 30px;
+ }
+ 
+ .seminorlist_td {
+     font-size: 10px;
+     width: 4%;
+ }
+ /* letratur */
+ 
+ .Literature {
+     height: 400px;
+     overflow-y: scroll;
+ }
+ 
+ .plus a {
+     padding: 0px 9px;
+     color: white;
+     font-size: 18px;
+     background-color: #65FF83;
+     border-radius: 50%;
+     /* width: 15px; */
+     /* height: 15px; */
+     font-weight: 600;
+ }
+ 
+ .az-right {
+     background-color: #DFE4EB
+ }

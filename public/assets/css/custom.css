@@ -1,0 +1,32 @@
+.login-span{
+    /*border: none !important;*/
+    width: 100%;
+    height: 60px;
+    background: #262262;
+    border-radius: 40px;
+    cursor: pointer;
+     margin: 0;
+    /* font-family: inherit;*/
+    /*font-size: inherit;*/
+    line-height: inherit;
+    text-align: center;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.login-span:hover{
+    color: #262262;
+    background: #E8F0FE;
+}
+.login-span:hover a{
+    color: #262262;
+}
+.login-span a{
+    width: 100%;
+}
+.login-span:hover.a{
+    color: #262262;
+    width: 100%;
+}

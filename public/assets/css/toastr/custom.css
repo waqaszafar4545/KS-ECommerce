@@ -1,0 +1,9 @@
+.toast-top-center {
+    top: 20%;
+    left: 5%;
+    min-width: 50%;
+}
+
+#toast-container.toast-top-center > div {
+    min-width: 25%;
+}

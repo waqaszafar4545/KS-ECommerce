@@ -1,0 +1,195 @@
+ @media screen and (min-width: 1400px) {
+     .container {
+         width: 1370px;
+     }
+ }
+ 
+ @media screen and (min-width: 1600px) {
+     .container {
+         width: 1570px;
+     }
+     .login .card {
+         padding: 200px 0 !important;
+     }
+ }
+ 
+ @media screen and (min-width: 1900px) {
+     .container {
+         width: 1870px;
+     }
+     .login .card {
+         padding: 300px 0 !important;
+     }
+ }
+ 
+ .main-header {
+     background: #76A7CF;
+ }
+ 
+ .main-sidebar {
+     background: white;
+ }
+ 
+ .main-header li.d-none a {
+     background: #80ADD7;
+     border-radius: 34px;
+     padding: 6px 15px !important;
+     font-size: small;
+ }
+ 
+ .main-header li a {
+     height: 32px !important;
+ }
+ 
+ .main-header span {
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .main-header .nav-link {
+     padding: 5px !important;
+ }
+ 
+ .main-header span b {
+     color: white;
+ }
+ 
+ .list-group {
+     list-style: none;
+ }
+ 
+ .text-center .col-md-4 small {
+     font-weight: 600;
+     font-size: 15px;
+ }
+ 
+ .scroll {
+     overflow-y: scroll;
+ }
+ 
+ .scroll li {
+     background: #f3f3f3;
+     margin-bottom: 8px;
+ }
+ 
+ .scroll1 {
+     overflow-y: scroll;
+ }
+ 
+ nav.main-header {
+     position: fixed;
+     width: 100%;
+     top: 0;
+ }
+ 
+ .card-map {
+     background-color: #fff;
+     background-clip: border-box;
+     border: 0 solid rgba(0, 0, 0, .125);
+     border-radius: .25rem;
+     box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+     margin-bottom: 1rem;
+ }
+ 
+ .card-map ul {
+     padding: 23px 15px;
+ }
+ 
+ .card-map ul li {
+     margin-bottom: 6px;
+ }
+ 
+ .scroll1 li {
+     background: #f3f3f3;
+     margin-bottom: 8px;
+ }
+ 
+ .login .card input {
+     background: white !important;
+     border-radius: 40px;
+ }
+ 
+ .login .container {
+     opacity: 100% !important;
+ }
+ 
+ .login .card button {
+     border-radius: 40px;
+ }
+ 
+ .login .card {
+     box-shadow: none;
+     background: transparent;
+     max-width: 450px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 90px 0;
+     height: 200px;
+ }
+ 
+ .login .card .form-group {
+     margin-bottom: 8px;
+ }
+ 
+ .form-check-input#remember {
+     margin-top: 7px !important;
+     height: 20px !important;
+ }
+ 
+ .login .card input {
+     height: 50px !important;
+ }
+ 
+ .login .card input#email {
+     margin-bottom: 12px;
+ }
+ 
+ .login .card a {
+     color: white;
+ }
+ 
+ .login .card button {
+     border: none !important;
+ }
+ 
+ .login .card>.card-body {
+     padding-bottom: 0px !important;
+ }
+ 
+ .main-sidebar .brand-link,
+ .main-sidebar .user-panel {
+     border: none !important;
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb,
+ .scroll1::-webkit-scrollbar-thumb {
+     background: #1F78B4 !important;
+ }
+ 
+ .scroll::-webkit-scrollbar-track,
+ .scroll1::-webkit-scrollbar-track {
+     background: #C3DEEC !important;
+ }
+ 
+ .footer {
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     padding: 10px 0;
+ }
+ 
+ .login {
+     background: linear-gradient( rgba(39, 35, 98, 0.28), rgba(39, 35, 98, 0.28)), url(https://aloexpo.com/admin/images/logo/bgimage.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+ }
+ 
+ .login_submit {
+     width: 100%;
+     height: 60px;
+     background: #262262;
+ }
+ 
+ .login_button_color {
+     color: white;
+ }
