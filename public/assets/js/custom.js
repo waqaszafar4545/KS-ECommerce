@@ -12,6 +12,7 @@ function validateFieldsByFormId(e) {
         flag = false;
     }
     if (flag) {
+        e.disabled=true;
         const buttonHtml = $(`#${validationSpanId}`).html();
         $(`#${validationSpanId}`).html(loadingImage());
         $.ajax({
@@ -34,6 +35,7 @@ function validateFieldsByFormId(e) {
                     notificationAlert('error', data.message, 'Inconceivable!');
                     //  bsAlert(data.message, 'alert-danger', 'alert_placeholder');
                     $(`#${validationSpanId}`).html(buttonHtml);
+                    e.disabled=false;
                 }
             }, error: function (data) {
                 // Error...
@@ -56,6 +58,7 @@ function validateFieldsByFormId(e) {
                 notificationAlert('error', errorMsg, 'Inconceivable!');
                 //  bsAlert(errorMsg, 'alert-danger', 'alert_placeholder');
                 $(`#${validationSpanId}`).html(buttonHtml);
+                e.disabled=false;
             }
         });
     }
