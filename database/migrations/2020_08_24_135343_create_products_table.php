@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExhibitionSeminarsTable extends Migration
+class CreateProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,16 @@ class CreateExhibitionSeminarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('exhibition_seminars', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('date');
-            $table->string('start');
-            $table->string('end');
-            $table->string('host');
             $table->string('name');
-            $table->string('email');
-            $table->string('title');
             $table->text('description');
-            $table->integer('theater_id');
+            $table->integer('image_id')->unsigned();
+            $table->decimal('price',10,2);
+            $table->integer('category_id')->unsigned();
             $table->timestamps();
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('image_id')->references('id')->on('images');
         });
     }
 
@@ -35,6 +33,6 @@ class CreateExhibitionSeminarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('exhibition_seminars');
+        Schema::dropIfExists('products');
     }
 }
