@@ -39,6 +39,12 @@ class ProductController extends Controller
     {
         return $this->productService->getProducts();
     }
+    public function createProducts()
+    {
+        // dd('test');
+        // return $this->productService->createProducts();
+        return view('products.create_product');
+    }
     /**
      * Show the form for creating a new resource.
      *

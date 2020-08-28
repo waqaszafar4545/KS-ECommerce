@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Route\Api\Auth;
+use Route\Api\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,5 @@ use Route\Api\Auth;
 //    return $request->user();
 //});
 Auth::register();
+Product::register();
 //Route::post('login', 'AuthController@login');

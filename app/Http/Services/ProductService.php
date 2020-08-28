@@ -28,4 +28,15 @@ class ProductService extends BaseService
             return $this->error($e->getMessage(), ['data' => $e]);
         }
     }
+    public function createProducts()
+    {
+        return view('products.create_product');
+        // try {
+        //     $count = $this->productRepository->getProducts();
+        //     return $this->success('Success', ['data' => $count]);
+        // } catch (\Exception $e) {
+        //     $this->failureLog("ERROR Occurred " . __FUNCTION__, "ERROR Occurred " . $e->getMessage(), $e);
+        //     return $this->error($e->getMessage(), ['data' => $e]);
+        // }
+    }
 }

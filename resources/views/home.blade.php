@@ -78,6 +78,7 @@
             </form>
             <div class="col-lg-6">
                 {{-- <!-- <a class="btn btn-primary  btn-md pd-create-video" href="{{ route('courses.showCreate') }}"> --> --}}
+                <a class="btn btn-primary  btn-md pd-create-video" href="{{'api/create_products'}}">
                     <span>+</span>Create Course</a>
             </div>
         </div>
