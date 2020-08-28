@@ -1,0 +1,136 @@
+.home_logo {
+    width: 54px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #28a745;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #28a745;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+form {
+    display: contents;
+}
+
+.file-preview {
+    background-color: #cef5fd !important;
+}
+
+.kv-avatar .krajee-default.file-preview-frame,
+.kv-avatar .krajee-default.file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.kv-avatar {
+    display: inline-block;
+}
+
+.kv-avatar .file-input {
+    display: table-cell;
+    width: 213px;
+}
+
+.kv-reqd {
+    color: red;
+    font-family: monospace;
+    font-weight: normal;
+}
+
+#default-profile-pic {
+    width: 100%;
+}
+
+#videoPreviewModal {
+    z-index: 9999;
+}
+
+.display-contents {
+    display: contents;
+}
+
+/* Profile Picture Uploader*/
+#modal {
+    z-index: 9999;
+    height: 75%;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+button.actionDone,
+.button.actionDone {
+    display: none;
+}
+button input[type="file"],
+.button input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.control-btns{
+    margin-top: 20px;
+}
+
+/* Profile Picture Uploader*/

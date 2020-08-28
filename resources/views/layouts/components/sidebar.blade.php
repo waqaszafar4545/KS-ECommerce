@@ -29,6 +29,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
+<<<<<<< HEAD
         {{-- <a class="nav-link" href="{{ route('videos.showList') }}"> --}}
         <i class="fas fa-fw fa-video"></i>
         <span>Videos</span></a>
@@ -36,13 +37,28 @@
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManageUsers" aria-expanded="true" aria-controls="collapseManageUsers">
+=======
+        {{-- <!-- <a class="nav-link" href="{{ route('videos.showList') }}">  --> --}}
+            <i class="fas fa-fw fa-video"></i>
+            <span>Videos</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManageUsers" aria-expanded="true"
+            aria-controls="collapseManageUsers">
+>>>>>>> mudassir
             <i class="fas fa-fw fa-folder"></i>
             <span>Manage Users</span>
         </a>
         <div id="collapseManageUsers" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
+<<<<<<< HEAD
                 {{-- <a class="collapse-item" href="{{ route('students.showList') }}">Students</a>
                 <a class="collapse-item" href="{{ route('teachers.showList') }}">Teachers</a> --}}
+=======
+                {{--<!-- <a class="collapse-item" href="{{ route('students.showList') }}">Students</a>
+                <a class="collapse-item" href="{{ route('teachers.showList') }}">Teachers</a> -->--}}
+>>>>>>> mudassir
             </div>
         </div>
     </li>

@@ -1,0 +1,350 @@
+.pd-wrapper {
+    padding: 2%;
+}
+* {
+    font-weight: 600;
+}
+.pd-wrapper h4 {
+    width: 100%;
+}
+label {
+    font-weight: 600;
+}
+button {
+    width: auto;
+}
+p {
+    margin-bottom: 5px;
+}
+
+/*==========file uploader ===========*/
+/* Upload image dialog */
+.uploadimage-dragndrop {
+    border: 2px dashed #ddd;
+    margin: 0px 0;
+    padding: 20px 20px;
+    text-align: center;
+    color: #8a8989c2;
+    background: #eaf3fc;
+}
+
+.uploadimage-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.uploadimage-input {
+    margin: 5px 0;
+}
+.uploadimage-upload {
+    background: #eee;
+    margin: 4px 0;
+}
+.uploadimage-uploadcompleted {
+    background: #d1f4ac;
+}
+.uploadimage-fileinfo {
+    padding: 5px;
+    font-size: 11px;
+    position: relative;
+}
+.uploadimage-progresspct {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.uploadimage-progress {
+    background: #999;
+}
+.uploadimage-progressbar {
+    background: maroon;
+    height: 2px;
+}
+.uploadimage-totalprogress {
+    background: #999;
+}
+.uploadimage-totalprogressbar {
+    background: #107ec2;
+    height: 6px;
+}
+
+.description {
+    margin: 40px 0;
+}
+.pd-or {
+    font-size: 11px;
+}
+
+/*==================== file uploader ==========*/
+
+.fa-cloud-upload-alt {
+    font-size: 26px;
+}
+input[type="file"] {
+    background-color: #a6f5a9;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    color: transparent;
+    width: 104px;
+    display: none;
+}
+
+.pd-file-inp-label {
+    color: #fff;
+}
+.pd-file-up-3 .pd-file-inp-label,
+.pd-file-up-2 .pd-file-inp-label {
+    padding: 6px 30px;
+}
+
+.pd-textarea-course-desc textarea {
+    box-shadow: 0px 1px 4px 0px #007bffe6;
+}
+.pd-col-flex {
+    padding: 0;
+    display: flex;
+}
+.pd-w-100 {
+    width: 100%;
+}
+.marg-0-10 {
+    margin: 0 10px;
+}
+.pad-0 {
+    padding: 0;
+}
+select {
+    padding: 5px !important;
+}
+.pad-left-15 {
+    padding: 0 0 0 15px;
+}
+
+/*========radio button css========*/
+
+[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: solid 4px;
+    color: #dc3545;
+    transition: all 100ms;
+    width: 20px;
+}
+[type="radio"]:checked {
+    background-color: #ffffff;
+    height: 8px;
+    width: 8px;
+    border: none;
+    box-shadow: 0px 0px 3px #00000059;
+    border-radius: 100px;
+    transform: scale(3);
+}
+
+/*================= radio button css end*/
+
+input[type="radio" i]:focus {
+    outline: none;
+}
+
+.pd-row-back-dang {
+    background-color: #ff00001f;
+    padding: 30px 0;
+}
+
+.pd-flex {
+    display: flex;
+}
+#pd-add {
+    margin-right: 15px !important;
+}
+.pd-xd-downl {
+    font-size: 12px;
+}
+.pd-marg-5 {
+    margin: 0 5px;
+}
+.pd-ali-cen {
+    align-items: center;
+}
+.pad-ri-25 {
+    padding-right: 25px;
+}
+.pd-create-video-button {
+    margin-top: 10px;
+}
+.c-v-b-g {
+    padding: 25px 0;
+}
+.play-para {
+    display: inline;
+    font-size: 12px;
+}
+.color-white {
+    color: white;
+}
+.pd-div-marg {
+    margin: 0 3px;
+}
+.pd-background-vid-overl {
+    background: #eaf3fc;
+    padding: 20px 15px;
+}
+.pd-float-right {
+    float: right;
+}
+.play-white {
+    border: 2px solid #ffffffab;
+    padding: 5px 10px 5px 13px;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+.play-black {
+    border: 2px solid #000000ba;
+    padding: 4px 8px 5px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+.seperator {
+    margin-top: 3%;
+}
+
+.pd-par-stats [type="radio"] {
+    color: green;
+}
+
+/*========================= new css*/
+
+#search {
+    border-radius: 25px;
+    margin-right: 10px;
+    padding: 25px 15px;
+}
+.pd-searchBtn {
+    border-radius: 30px;
+    padding: 12px 16px;
+}
+.pd-create-video {
+    border-radius: 35px;
+    padding: 10px 20px 10px 10px;
+    font-weight: 300;
+}
+.pd-create-video span {
+    line-height: 0;
+    height: 0;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.pd-table-div {
+    padding-top: 3%;
+}
+.pd-create-course .badge {
+    padding: 6px 20px 7px 20px;
+    border-radius: 20px;
+}
+.pd-create-course td {
+    font-weight: 400;
+}
+.pd-create-course .table thead th {
+    font-weight: 700;
+}
+.pd-check-sec-opt label {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.pd-check-sec-opt input[type="checkbox"],
+.pd-check-sec-opt input[type="radio"] {
+    margin-right: 6px;
+}
+.pd-bg-skyblue {
+    background: #eaf3fc;
+    padding: 0 20px 25px;
+}
+.pd-bg-skyblue .uploadimage-dragndrop {
+    background: white !important;
+}
+.pd-tab-wrp a {
+    color: #212529;
+}
+.pd-tab-wrp .nav-link:focus {
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+    background: #007bff;
+    color: white;
+    border-radius: 3px;
+}
+.nav-tabs .nav-link {
+    border: 1px solid #dedede;
+    margin: 0 0px;
+    border-radius: 0;
+    line-height: 0;
+    font-size: 10px;
+    padding: 10px 20px;
+}
+.nav-tabs {
+    border: none;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+}
+#nav-tabContent {
+    padding: 10px;
+}
+.pd-tab-wrp .pd-box {
+    min-height: 55vh;
+}
+.pd-top-stat-wrp .pd-box {
+    margin: 0;
+}
+.pd-top-stat-wrp h6 {
+    font-size: 10px;
+}
+.pd-top-stat-wrp h4 {
+    font-size: 20px;
+}
+.pd-top-stat-wrp .badge {
+    font-size: 10px;
+    padding: 3px 10px;
+    background: #fb2e63;
+    border-radius: 0;
+}
+
+.pd-top-stat-wrp .fa-sort-up {
+    margin-left: 2px;
+}
+.pd-top-stat-wrp .pd-line-shaded {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #ff000000, #fb2e63);
+    position: relative;
+}
+.pd-top-stat-wrp .pd-line-shaded::after {
+    content: "";
+    width: 14px;
+    height: 12px;
+    border-radius: 25px;
+    background-color: #fb2e63;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.home_logo {
+    width: 54px;
+}
+
+.user-img {
+    width: 32px;
+    height: 32px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
