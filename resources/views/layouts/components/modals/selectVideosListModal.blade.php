@@ -20,10 +20,8 @@
                         <form method="GET">
                             @csrf
                             <div class="col-12 pd-flex">
-                                <input type="text" name="search" placeholder="Search..." id="search"
-                                    class="form-control">
-                                <span><button type="submit" class="btn btn-small btn-primary pd-searchBtn"> <i
-                                            class="fas fa-search"></i></button></span>
+                                <input type="text" name="search" placeholder="Search..." id="search" class="form-control">
+                                <span><button type="submit" class="btn btn-small btn-primary pd-searchBtn"> <i class="fas fa-search"></i></button></span>
                             </div>
                         </form>
                     </div>
@@ -46,39 +44,34 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($videos as $video)
+                                {{-- @foreach ($videos as $video)
                                 <tr id="select-video-row-{{$video->id}}" class="select-video-row">
-                                    <td class="text-center">
-                                        <input type="checkbox" data-video-title="{{$video->title}}"
-                                            data-video-duration="{{$video->duration}}"
-                                            class="form-check-input video-add-checkbox" value="{{$video->id}}">
-                                    </td>
-                                    <td width="20%">{{$video->title}}</td>
-                                    <td width="10%">{{$video->course_name}}</td>
-                                    <td>
-                                        @if($video->status)
-                                        <span class="badge badge-success badge-md">Active</span>
-                                        @else
-                                        <span class="badge badge-warning badge-md">InActive</span>
-                                        @endif
-                                    </td>
-                                    <td>{{$video->duration}}</td>
-                                    <td>{{$video->size}}</td>
-                                    <td>
-                                        @if($video->value==0)
-                                        <span class="badge badge-success badge-md">Free</span>
-                                        @else
-                                        <span class="badge badge-warning badge-md">Paid</span>
-                                        @endif
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary video-preview-btn"
-                                            data-video-title="{{$video->title}}"
-                                            data-file-name="{{$video->value==0?$video->file_name:asset($video->file_name)}}"
-                                            data-video-value="{{$video->value==0?'free':'paid'}}">Preview</button>
-                                    </td>
+                                <td class="text-center">
+                                    <input type="checkbox" data-video-title="{{$video->title}}" data-video-duration="{{$video->duration}}" class="form-check-input video-add-checkbox" value="{{$video->id}}">
+                                </td>
+                                <td width="20%">{{$video->title}}</td>
+                                <td width="10%">{{$video->course_name}}</td>
+                                <td>
+                                    @if($video->status)
+                                    <span class="badge badge-success badge-md">Active</span>
+                                    @else
+                                    <span class="badge badge-warning badge-md">InActive</span>
+                                    @endif
+                                </td>
+                                <td>{{$video->duration}}</td>
+                                <td>{{$video->size}}</td>
+                                <td>
+                                    @if($video->value==0)
+                                    <span class="badge badge-success badge-md">Free</span>
+                                    @else
+                                    <span class="badge badge-warning badge-md">Paid</span>
+                                    @endif
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary video-preview-btn" data-video-title="{{$video->title}}" data-file-name="{{$video->value==0?$video->file_name:asset($video->file_name)}}" data-video-value="{{$video->value==0?'free':'paid'}}">Preview</button>
+                                </td>
                                 </tr>
-                                @endforeach
+                                @endforeach --}}
                             </tbody>
                         </table>
                     </div>

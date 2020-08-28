@@ -73,13 +73,15 @@
             <form method="GET" action="{{route('home')}}">
                 @csrf
                 <div class="col-lg-6 pd-flex">
-                    {{-- <input type="text" name="search" placeholder="Search..." id="search" class="form-control" value="{{$search}}"> --}}
-                    <span><button type="submit" class="btn btn-small btn-primary pd-searchBtn"> <i class="fas fa-search"></i></button></span>
+                    {{-- <input type="text" name="search" placeholder="Search..." id="search" class="form-control" value=""> --}}
+                    {{-- value is {{$search}} --}}
+                    {{-- <span><button type="submit" class="btn btn-small btn-primary pd-searchBtn"> <i class="fas fa-search"></i></button></span> --}}
                 </div>
             </form>
             <div class="col-lg-6">
-                {{-- <a class="btn btn-primary  btn-md pd-create-video" href="{{ route('courses.showCreate') }}"> --}}
-                <span>+</span>Create Course</a>
+                <a class="btn btn-primary  btn-md pd-create-video" href="{{ route('courses.showCreate') }}">
+                    {{-- href iss {{ route('courses.showCreate') }} --}}
+                    <span>+</span>Create Course</a>
             </div>
         </div>
 

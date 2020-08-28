@@ -19,4 +19,5 @@ use Route\Api\Auth;
 //    return $request->user();
 //});
 Auth::register();
+
 //Route::post('login', 'AuthController@login');
