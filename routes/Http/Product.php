@@ -1,6 +1,6 @@
 <?php
 
-namespace Route\Api;
+namespace Route\Http;
 
 use \Illuminate\Support\Facades\Route;
 
@@ -10,8 +10,7 @@ class Product
     {
         //'auth:sanctum', Removed As Heroku providing limited access
         //Route::group(['middleware' => ['auth:sanctum']], function () {
-            Route::post('get_products', 'ProductController@getProducts')->name('get.products');
-            Route::post('store_product','ProductController@store');
+            Route::get('create_product', 'ProductController@create')->name('create.products');
         //});
     }
 }
