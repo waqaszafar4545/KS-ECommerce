@@ -87,7 +87,7 @@
             </form>
             <div class="col-lg-6">
                 {{-- <!-- <a class="btn btn-primary  btn-md pd-create-video" href="{{ route('courses.showCreate') }}"> --> --}}
-                <a class="btn btn-primary  btn-md pd-create-video" href="{{'api/create_product'}}">
+                <a class="btn btn-primary  btn-md pd-create-video" href="{{'create_product'}}">
                     <span>+</span>Create Course</a>
             </div>
         </div>
@@ -99,40 +99,53 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Subject</th>
-                        <th scope="col">No Of Students Enrolled</th>
-                        <th scope="col">Classes</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Description</th>
+                        <th scope="col">Product Price</th>
+                        <th scope="col">Image Title</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Image Description</th>
+                        <th scope="col">Category Title</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
-                {{-- <!-- <tbody>
-                    @foreach ($courses as $course)
+                <tbody>
+                    @foreach ($products as $product)
                     <tr>
-                        <td>{{$course->id}}</td>
-                <td width="20%">{{$course->title}}</td>
-                <td>
-                    @if($course->status)
-                    <span class="badge badge-success badge-md">Active</span>
-                    @else
-                    <span class="badge badge-warning badge-md">InActive</span>
-                    @endif
-                </td>
-                <td width="20%">{{$course->subject->name}}</td>
-                <td>{{$course->studentsOfClasses()->count()}}</td>
-                <td>
-                    <button type="button" data-classes="{{$course->classes}}" class="btn btn-sm btn-success view-classes-btn">View</button>
-                </td>
-                <td>
-                    <button class="btn btn-sm btn-primary view-course-btn" type="button">Preview</button>
-                    <a class="btn btn-sm btn-info" href="{{route('courses.showEdit',['id'=>$course->id])}}">Edit</a>
-                    <button class="btn btn-sm btn-danger course-delete-btn" data-delete-url="{{route('courses.tryDelete',['id'=>$course->id])}}">Delete</button>
-                </td>
-                </tr>
-                @endforeach
-                </tbody> --> --}}
+                        {{-- <!-- <td>{{$course->id}}</td> --> --}}
+                        <td width="20%">{{$product->name}}</td>
+                        {{-- <!-- <td>
+                            @if($course->status)
+                            <span class="badge badge-success badge-md">Active</span>
+                            @else
+                            <span class="badge badge-warning badge-md">InActive</span>
+                            @endif
+                        </td> --> --}}
+                        <td width="20%">{{$product->description}}</td>
+                        <td>{{$product->price}}</td>
+                        <td>{{$product->title}}</td>
+                        <!-- <td>{{$product->path}}</td> -->
+                        <td><img src="{{asset($product->path)}}" height="100px" width="100px"></td>
+                        <td>{{$product->images_description}}</td>
+                        <td>{{$product->category_title}}</td>
+                        {{-- <!-- <td>
+                            <button type="button" data-classes="{{$course->classes}}" class="btn btn-sm btn-success view-classes-btn">View</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary view-course-btn" type="button">Preview</button>
+                            <a class="btn btn-sm btn-info" href="{{route('courses.showEdit',['id'=>$course->id])}}">Edit</a>
+                            <button class="btn btn-sm btn-danger course-delete-btn" data-delete-url="{{route('courses.tryDelete',['id'=>$course->id])}}">Delete</button>
+                        </td> --> --}}
+                        <td>
+                            <button class="btn btn-sm btn-primary view-course-btn" type="button">Preview</button>
+                            {{-- <!-- <a class="btn btn-sm btn-info" href="{{route('courses.showEdit',['id'=>$course->id])}}">Edit</a> --> --}}
+                            <a class="btn btn-sm btn-info" href="">Edit</a>
+                            {{-- <!-- <button class="btn btn-sm btn-danger course-delete-btn" data-delete-url="{{route('courses.tryDelete',['id'=>$course->id])}}">Delete</button> --> --}}
+                            <button class="btn btn-sm btn-danger course-delete-btn" data-delete-url="">Delete</button>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
             </table>
             {{-- <!-- {{ $courses->links() }} --> --}}
         </div>

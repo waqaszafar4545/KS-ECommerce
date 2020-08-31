@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
+use DB;
+use App\Http\Models\Product;
+use App\Http\Models\Image;
+use App\Http\Models\Category;
 
 class HomeController extends Controller
 {
@@ -13,7 +18,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-       // $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -23,7 +28,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // $products = Product::all();
+        $products = DB::table('products')
+            ->join('images', 'images.id', '=', 'products.id')
+            ->join('categories', 'categories.id', '=', 'products.id')
+            ->select('images.*','products.*','categories.title as category_title','images.description as images_description')
+            ->get();
+
+        return view('home', ['products' => $products]);
+        // return view('home');
     }
 
     public function exhibitionList()
@@ -32,11 +45,11 @@ class HomeController extends Controller
     }
 
     public function organiserindex()
-    { 
-         return view('organiser.index');
+    {
+        return view('organiser.index');
     }
-    
-    
+
+
     public function exhibitorDetail()
     {
         return view('organiser.exdetail');
@@ -46,29 +59,29 @@ class HomeController extends Controller
         return view('organiser.exhibitor');
     }
 
-   
 
-   public function showguide()
+
+    public function showguide()
     {
         return view('organiser.showguide');
     }
 
-   public function letrature()
+    public function letrature()
     {
         return view('organiser.letrature');
     }
 
-   public function semiranlist()
+    public function semiranlist()
     {
         return view('organiser.seminarlist');
     }
 
-   public function semiranadd()
+    public function semiranadd()
     {
         return view('organiser.semiranadd');
     }
 
-   public function software()
+    public function software()
     {
         return view('organiser.software');
     }
