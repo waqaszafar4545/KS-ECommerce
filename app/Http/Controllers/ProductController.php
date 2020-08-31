@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Services\ProductService;
 use Illuminate\Http\Request;
+use Session;
+use App\Http\Models\Product;
+use App\Http\Models\Image;
+use App\Http\Models\Category;
 
 class ProductController extends Controller
 {
@@ -43,7 +47,6 @@ class ProductController extends Controller
     {
         // dd('test');
         // return $this->productService->createProducts();
-        return view('products.create_product');
     }
     /**
      * Show the form for creating a new resource.
@@ -52,6 +55,7 @@ class ProductController extends Controller
      */
     public function create()
     {
+        return view('products.create_product');
     }
 
     /**
@@ -62,7 +66,41 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'product_name' => 'required',
+            'product_price' => 'required',
+            'product_description' => 'required',
+            'image_title' => 'required',
+            'image_description' => 'required',
+            'product_image' => 'required',
+            'categoty_title' => 'required'
+        ]);
+        $category = new Category;
+        $category->title = $request->categoty_title;
+        $category_result = $category->save();
+        $image = new Image;
+        $file = $request->file('product_image');
+        $file_name = $file->getClientOriginalName();
+        $destinationPath = 'uploads';
+        $file_path = $destinationPath . "/" . $file_name;
+        $file->move($destinationPath, $file->getClientOriginalName());
+        $image->title = $request->image_title;
+        $image->description = $request->image_description;
+        $image->path = $file_path;
+        $image_result = $image->save();
+        $category_id = Category::orderBy('id', 'desc')->first();
+        $image_id = Image::orderBy('id', 'desc')->first();
+        $product = new Product;
+        $product->name = $request->product_name;
+        $product->description = $request->product_description;
+        $product->image_id = $image_id->id;
+        $product->price = $request->product_price;
+        $product->category_id = $category_id->id;
+        $product_result = $product->save();
+        if ($category_result && $image_result && $product_result) {
+            $request->session()->flash('status', 'Product Added Successfully');
+            return redirect('home');
+        }
     }
 
     /**

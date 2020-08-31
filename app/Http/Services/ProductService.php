@@ -20,17 +20,17 @@ class ProductService extends BaseService
 
     public function getProducts()
     {
-        try {
-            $count = $this->productRepository->getProducts();
-            return $this->success('Success', ['data' => $count]);
-        } catch (\Exception $e) {
-            $this->failureLog("ERROR Occurred " . __FUNCTION__, "ERROR Occurred " . $e->getMessage(), $e);
-            return $this->error($e->getMessage(), ['data' => $e]);
-        }
+        $products = $this->productRepository->getProducts();
+        return $products ?? [];
     }
-    public function createProducts()
+    public function getProductById($id=0)
     {
-        return view('products.create_product');
+        $product = $this->productRepository->getById($id);
+        return $product ?? [];
+    }
+    public function createProduct($request = [])
+    {
+        // return view('products.create_product');
         // try {
         //     $count = $this->productRepository->getProducts();
         //     return $this->success('Success', ['data' => $count]);

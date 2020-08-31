@@ -21,5 +21,4 @@ use Route\Api\Product;
 //});
 Auth::register();
 Product::register();
-
 //Route::post('login', 'AuthController@login');
